@@ -2,7 +2,7 @@
 const title = document.getElementById("title");
 const content = document.getElementById("content");
 
-var search = window.location.search.substr(1)
+var search = window.location.search.substr(1);
 
 if(search){
     var api = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvslots=*&rvprop=content&formatversion=2&titles=" + search;
