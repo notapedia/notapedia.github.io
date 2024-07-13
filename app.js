@@ -8,7 +8,7 @@ if(search){
     var api = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvslots=*&rvprop=content&formatversion=2&titles=" + search;
 
     fetch(api)
-    .then(response => response.json());
+    .then(response => response.json())
     .then(response => {
         response = response.query.pages;
         var pageid = Object.keys(response)[0];
