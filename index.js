@@ -1,4 +1,4 @@
-const input = document.querySelector("search-input");
+const input = document.querySelector(".search-input");
 
 input.addEventListener("keyup", function(e){
     if(e.keyCode === 13){
